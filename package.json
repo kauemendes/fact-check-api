@@ -1,0 +1,48 @@
+{
+  "name": "fact-check-api",
+  "version": "0.0.1",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:dev": "nodemon index.js",
+    "lint": "eslint ./ ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "knex": "./node_modules/.bin/knex",
+    "debug": "node --inspect index.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.509.0",
+    "basic-auth": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "express-joi": "^0.3.1",
+    "helmet": "^3.20.0",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.16.3",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "multer-s3": "^2.9.0",
+    "node-fetch": "^2.6.0",
+    "nodemailer": "^6.1.1",
+    "objection": "^1.6.7",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "pg": "^7.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-yara": "^2.3.2",
+    "eslint-plugin-jest": "^22.4.1",
+    "husky": "^2.3.0",
+    "nodemon": "^1.18.10"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run lint"
+    }
+  }
+}
