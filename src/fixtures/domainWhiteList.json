@@ -1,0 +1,20 @@
+{
+    "whitelist": [
+        {
+            "domain": "uol.com.br",
+            "points": 0.70
+        },
+        {
+            "domain": "folha.uol.com.br",
+            "points": 0.90
+        },
+        {
+            "domain": "theintercept.com",
+            "points": 0.90
+        },
+        {
+            "domain": "veja.abril.com.br",
+            "points": 0.30
+        }
+    ]
+}

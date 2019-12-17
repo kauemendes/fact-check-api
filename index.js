@@ -6,6 +6,7 @@ const app = express();
 const cors = require('cors');
 const config = require('./src/config');
 const morgan = require('morgan');
+const listEndpoints = require('express-list-endpoints');
 
 const {
   errorMiddleware
@@ -18,6 +19,9 @@ app.use(morgan('combined'));
 const api = require('./src/routes/index');
 
 app.use('/api', cors(), api);
+
+console.log(listEndpoints(api))
+// app.use('/ep', cors(), );
 
 // Error middleware
 app.use(errorMiddleware);
